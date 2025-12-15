@@ -1,11 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="hero-page">
+      <div class="hero-page__content center">
+        <h1 class="hero-page__title">Добро пожаловать на мой сайт мини-игр</h1>
+        <p class="hero-page__text">
+          Тебе предстоит несколько увлекательных игр. Если готов, нажимай
+          <span class="hero-page__bold">«Поехали!»</span> и
+          <span class="hero-page__bold">приступай</span>.
+        </p>
+        <button class="hero-page__btn" type="button">Поехали!</button>
+      </div>
+    </header>
+    <main>
+      <section class="main">
+        <div class="main__wraper center">
+          <div class="main__opis">
+            <h2 class="main__zag">Об играх</h2>
+            <p class="main__text">
+              В моей коллекции представлено 6 игр на разные темы. <br>Игры несложные
+              — в них может поиграть каждый. <br> Все игры доступны для пользования.
+            </p>
+          </div>
+          <div class="main__game">
+            <div class="main__item small">
+              <img class="main__img" src="./img/Обложка карточки 0.svg" alt="img" />
+              <div class="main__box">
+                <p class="main__boxing">Игра № 1</p>
+                <p class="main__name">Угадай число</p>
+              </div>
+            </div>
+            <div class="main__item big">
+              <img class="main__img" src="./img/Обложка карточки (1).svg" alt="img" />
+              <div class="main__box">
+                <p class="main__boxing">Игра № 2</p>
+                <p class="main__name">Простая арифметика</p>
+              </div>
+            </div>
+            <div class="main__item small">
+              <img class="main__img" src="./img/Обложка карточки (2).svg" alt="" />
+              <div class="main__box">
+                <p class="main__boxing">Игра №3</p>
+                <p class="main__name">Переверни текст</p>
+              </div>
+            </div>
+            <div class="main__item big">
+              <img class="main__img" src="./img/Обложка карточки.png" alt="" />
+              <div class="main__box">
+                <p class="main__boxing">Игра №4</p>
+                <p class="main__name">Камень, ножницы, бумага</p>
+              </div>
+            </div>
+            <div class="main__item small siti">
+              <img class="main__img" src="./img/Обложка карточки (4).svg" alt="" />
+              <div class="main__box">
+                <p class="main__boxing">Игра №5</p>
+                <p class="main__name">Простая викторина</p>
+              </div>
+            </div>
+            <div class="main__item big">
+              <img class="main__img" src="./img/Обложка карточки (5).svg" alt="" />
+              <div class="main__box">
+                <p class="main__boxing">Игра №6</p>
+                <p class="main__name">Генератор случайных цветов</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+        <section class="max-game center">
+            <h2 class="max-game__zag">Мини-игры</h2>
+            <div class="max-game__wrapper" id="game1">
+                <div class="max-game__item">
+                    <div class="max-game__text-box">
+                        <p class="max-game__name">Угадай число</p>
+                        <p class="max-game__opis">Попробуй угадать случайное число от 1 до 100.</p>
+                        <button class="max-game__btn">Играть!</button>
+                    </div>
+                    <img src="./img/Обложка карточки (1)11.svg" alt="" class="max-game__img">
+                </div>
+                <div class="max-game__item" id="game2">
+                    <img src="./img/Обложка карточки (2.2).svg" alt="" class="max-game__img">
+                    <div class="max-game__text-box">
+                        <p class="max-game__name">Простая арифметика</p>
+                        <p class="max-game__opis">Попробуй решить простые  арифметические задачи.</p>
+                        <button class="max-game__btn">Играть!</button>
+                    </div>
+                </div>
+                <div class="max-game__item" id="game3">
+                    <div class="max-game__text-box">
+                        <p class="max-game__name">Переверни текст</p>
+                        <p class="max-game__opis">Попробуй ввести текст, который  будет перевернут.</p>
+                        <button class="max-game__btn">Играть!</button>
+                    </div>
+                    <img src="./img/Обложка карточки 3.2.svg" alt="" class="max-game__img">
+                </div>
+                <div class="max-game__item" id="game4">
+                    <img src="./img/Обложка карточки 44.png" alt="" class="max-game__img">
+                    <div class="max-game__text-box">
+                        <p class="max-game__name">Камень, ножницы, бумага</p>
+                        <p class="max-game__opis">Сыграй в популярную игру против компьютера.</p>
+                        <button class="max-game__btn">Играть!</button>
+                    </div>
+                </div>
+                <div class="max-game__item" id="game5">
+                    <div class="max-game__text-box">
+                        <p class="max-game__name">Простая викторина</p>
+                        <p class="max-game__opis">Отвечай на вопросы викторины  с вариантами ответов.</p>
+                        <button class="max-game__btn">Играть!</button>
+                    </div>
+                    <img src="./img/Обложка карточки (5.5).svg" alt="" class="max-game__img">
+                </div>
+                <div class="max-game__item element" id="game6">
+                    <img src="./img/Обложка карточки (6.6).svg" alt="" class="max-game__img">
+                    <div class="max-game__text-box">
+                        <p class="max-game__name">Генератор случайных цветов</p>
+                        <p class="max-game__opis">Игра, в которой при клике на кнопку  фон страницы меняется на
+                            случайный.</p>
+                        <button class="max-game__btn">Играть!</button>
+                    </div>
+                </div>
+            </div>
+      </section>
+      <footer class="footer">Все права защищены.</footer>
+    </main>
+  </body>
 </html>
