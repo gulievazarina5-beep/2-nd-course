@@ -24,6 +24,7 @@ button {
 
 .hero-page {
     background-image: url(./img/photo_5314404550401790636_y.jpg);
+    height: 800px;
     min-height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -63,13 +64,19 @@ button {
 .hero-page__btn {
     width: 247px;
     padding: 16px 28px;
-    background-color: #202027;
-    color: white;
+    background-color: #fff;
+    color: black;
     border-radius: 600px;
     font-weight: 600;
     line-height: 142%;
     text-align: center;
     font-size: 24px;
+    cursor: pointer;
+}
+
+.hero-page__btn:hover {
+    background-color: black;
+    color: white;
 }
 
 .main {
