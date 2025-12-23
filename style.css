@@ -64,8 +64,8 @@ button {
 .hero-page__btn {
     width: 247px;
     padding: 16px 28px;
-    background-color: #fff;
-    color: black;
+    background-color: #202027;
+    color: white;
     border-radius: 600px;
     font-weight: 600;
     line-height: 142%;
@@ -75,8 +75,8 @@ button {
 }
 
 .hero-page__btn:hover {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: #202027;
 }
 
 .main {
