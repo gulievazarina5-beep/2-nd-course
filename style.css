@@ -25,7 +25,6 @@ button {
 .hero-page {
     background-image: url(./img/photo_5314404550401790636_y.jpg);
     height: 800px;
-    min-height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -120,7 +119,7 @@ button {
 .main__item {
     border-radius: 30px;
     background-color: #FFFFFF;
-
+    text-decoration: none;
 }
 
 .small {
@@ -162,6 +161,7 @@ button {
     line-height: 100%;
     color: #202027;
 }
+
 
 .max-game {
     background-color: #202027;
