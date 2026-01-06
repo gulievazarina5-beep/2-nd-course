@@ -1,3 +1,5 @@
+
+//Variables 
 //number1
 
 let a =10 
@@ -69,3 +71,85 @@ let user = {
 
 let nameUser = prompt('Как вас зовут: ')
 alert(`Привет ${nameUser}`)
+
+
+
+//number1 conditional branching
+// Создаем переменную с правильным паролем
+let password = 'мойПароль123';
+
+// Запрашиваем пароль у пользователя
+let userPassword = prompt('Введите пароль');
+
+// Проверяем введенные данные
+if (userPassword === password) {
+    alert('Пароль введен верно');
+} else {
+    alert('Пароль введен неверно');
+}
+
+//number2
+let c = 2; // Проверьте также значения: 0, 10, -3
+
+if (c > 0 && c < 10) {
+    console.log('Верно');
+} else {
+    console.log('Неверно');
+}
+
+// Результаты проверки:
+// При c = 0  -> Неверно
+// При c = 10 -> Неверно
+// При c = -3 -> Неверно
+// При c = 2  -> Верно
+
+//number3
+let d = 150;
+let e = 50;
+
+if (d > 100 || e > 100) {
+    console.log('Верно');
+} else {
+    console.log('Неверно');
+}
+
+//number4
+let a = '2';
+let b = '3';
+
+// Используем функцию Number() или унарный плюс для преобразования строк в числа
+alert(Number(a) + Number(b)); 
+
+
+//number5
+let monthNumber = 12;
+
+switch (monthNumber) {
+    case 12:
+    case 1:
+    case 2:
+        console.log('Зима');
+        break;
+    case 3:
+    case 4:
+    case 5:
+        console.log('Весна');
+        break;
+    case 6:
+    case 7:
+    case 8:
+        console.log('Лето');
+        break;
+    case 9:
+    case 10:
+    case 11:
+        console.log('Осень');
+        break;
+    default:
+        console.log('Такого месяца не существует (введите число от 1 до 12)');
+        break;
+}
+
+
+
+
