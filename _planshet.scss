@@ -1,0 +1,125 @@
+@media (max-width: 1200px) {
+
+    .center {
+        padding-left: calc(50% - 400px);
+        padding-right: calc(50% - 400px);
+    }
+
+
+
+    .mini-game {
+
+
+        &__zag {
+            font-size: 52px;
+            padding-top: 49px;
+        }
+
+
+
+
+        &__text-box {
+            padding-bottom: 32px;
+            padding-left: 32px;
+            width: 400px;
+        }
+
+        
+
+        &__name {
+            font-size: 24px;
+        }
+
+        &__opis {
+            font-size: 16px;
+            width: 275px;
+            line-height: 24px;
+        }
+
+        &__img {
+            width: 400px;
+        }
+
+        &__wrapper::after {
+            content: none;
+            display: none;
+        }
+
+        &__wrapper::before {
+            content: none;
+            display: none;
+        }
+
+
+    }
+
+    .header {
+        height: 30vh;
+        
+
+        &__zag {
+            font-size: 52px;
+        }
+
+        &__text {
+            font-size: 24px;
+        }
+
+        &__bold {
+            font-size: 24px;
+        }
+
+        &__main {
+            padding-top: 147px;
+        }
+
+        &__but {
+            padding-top: 16px;
+            padding-bottom: 16px;
+            font-size: 24px;
+        }
+    }
+
+    .footer {
+        font-size: 24px;
+    }
+
+    .element::after {
+        content: none;
+        display: none;
+
+    }
+
+    .element::before {
+        content: none;
+        display: none;
+    }
+
+    .about {
+
+
+        &__game::before {
+            content: none;
+            display: none;
+        }
+
+        &__game::after {
+            content: none;
+            display: none;
+        }
+
+        &__opis::before {
+            content: none;
+            display: none;
+        }
+
+        &__game-name{
+            font-size: 22px;
+        }
+
+        &__text-box{
+            padding-left: 20px;
+        }
+    }
+
+}

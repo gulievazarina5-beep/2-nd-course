@@ -1,160 +1,200 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style_for-mini.css" />
   </head>
+
   <body>
-    <header class="hero-page">
-      <div class="hero-page__content center">
-        <h1 class="hero-page__title">Добро пожаловать на мой сайт мини-игр</h1>
-        <p class="hero-page__text">
-          Тебе предстоит несколько увлекательных игр. Если готов, нажимай
-          <span class="hero-page__bold">«Поехали!»</span> и
-          <span class="hero-page__bold">приступай</span>.
+    <header class="header">
+      <div class="header__main center">
+        <h1 class="header__zag">
+          Добро пожаловать <br />
+          на мой сайт мини-игр
+        </h1>
+        <p class="header__text">
+          Тебе предстоит пройти несколько увлекательных игр. Если готов, нажимай
+          <span class="header__bold">«Поехали!»</span> и
+          <span class="header__bold">приступай</span>.
         </p>
-        <button class="hero-page__btn" type="button"onclick="location.href='#mains'">Поехали!</button>
+        <button class="header__but" onclick="location.href='#about'">
+          Поехали!
+        </button>
       </div>
+      <div class="header__footer"></div>
     </header>
+
     <main>
-      <section id="mains" class="main">
-        <div class="main__wraper center">
-          <div class="main__opis">
-            <h2 class="main__zag">Об играх</h2>
-            <p class="main__text">
-              В моей коллекции представлено 6 игр на разные темы. <br />Игры
-              несложные — в них может поиграть каждый. <br />
+      <section class="about" id="about">
+        <div class="about__wrapper center">
+          <div class="about__opis">
+            <h2 class="about__zag">Об играх</h2>
+
+            <p class="about__text">
+              В моей коллекции представлено 6 игр на разные темы. <br />
+              Игры несложные — в них может поиграть каждый. <br />
               Все игры доступны для пользования.
             </p>
           </div>
-          <div class="main__game">
-            <a href="#game1" class="main__item small">
-              <img class="main__img" src="./img/game1.svg" alt="game1">
-              <div class="main__box">
-                <p class="main__boxing">Игра № 1</p>
-                <p class="main__name">Угадай число</p>
+          <div class="about__game">
+            <div class="about__item small" onclick="location.href='#game1'">
+              <img src="./img/game-about1.png" alt="" class="about__img" />
+              <div class="about__text-box">
+                <p class="about__game-nuumber">Игра № 1</p>
+                <p class="about__game-name">Угадай число</p>
               </div>
-            </a>
-            <a href="#game2" class="main__item big">
-              <img class="main__img" src="./img/game2.svg" alt="game2">
-              <div class="main__box">
-                <p class="main__boxing">Игра № 2</p>
-                <p class="main__name">Простая арифметика</p>
+            </div>
+
+            <div class="about__item big" onclick="location.href='#game2'">
+              <img src="./img/game-about2.png" alt="" class="about__img" />
+              <div class="about__text-box">
+                <p class="about__game-nuumber">Игра № 2</p>
+                <p class="about__game-name">
+                  Простая<br />
+                  арифметика
+                </p>
               </div>
-            </a>
-            <a href="#game3" class="main__item small">
-              <img class="main__img" src="./img/game3.svg" alt="game3">
-              <div class="main__box">
-                <p class="main__boxing">Игра №3</p>
-                <p class="main__name">Переверни текст</p>
+            </div>
+
+            <div class="about__item small" onclick="location.href='#game3'">
+              <img src="./img/game-about3.png" alt="" class="about__img" />
+              <div class="about__text-box">
+                <p class="about__game-nuumber">Игра № 3</p>
+                <p class="about__game-name">Переверни текст</p>
               </div>
-            </a>
-            <a href="#game4" class="main__item big">
-              <img class="main__img" src="./img/game4.png" alt="game4">
-              <div class="main__box">
-                <p class="main__boxing">Игра №4</p>
-                <p class="main__name">Камень, ножницы, бумага</p>
+            </div>
+
+            <div class="about__item big" onclick="location.href='#game4'">
+              <img src="./img/game-about4.png" alt="" class="about__img" />
+              <div class="about__text-box">
+                <p class="about__game-nuumber">Игра № 4</p>
+                <p class="about__game-name">
+                  Камень,<br />
+                  ножницы,<br />
+                  бумага
+                </p>
               </div>
-            </a>
-            <a href="#game5" class="main__item small siti">
-              <img class="main__img" src="./img/game5.svg" alt="game5">
-              <div class="main__box">
-                <p class="main__boxing">Игра №5</p>
-                <p class="main__name">Простая викторина</p>
+            </div>
+
+            <div
+              class="about__item small order1"
+              onclick="location.href='#game5'"
+            >
+              <img src="./img/game-about5.png" alt="" class="about__img" />
+              <div class="about__text-box">
+                <p class="about__game-nuumber">Игра № 5</p>
+                <p class="about__game-name">
+                  Простая <br />
+                  викторина
+                </p>
               </div>
-            </a>
-            <a href="#game6" class="main__item big">
-              <img class="main__img" src="./img/game6.svg" alt="game6">
-              <div class="main__box">
-                <p class="main__boxing">Игра №6</p>
-                <p class="main__name">Генератор случайных цветов</p>
+            </div>
+
+            <div class="about__item big" onclick="location.href='#game6'">
+              <img src="./img/game-about6.png" alt="" class="about__img" />
+              <div class="about__text-box">
+                <p class="about__game-nuumber">Игра № 6</p>
+                <p class="about__game-name">
+                  Генератор <br />случайных<br />
+                  цветов
+                </p>
               </div>
-            </a>
+            </div>
           </div>
         </div>
       </section>
-      <section class="max-game center">
-        <h2 class="max-game__zag">Мини-игры</h2>
-        <div class="max-game__wrapper" id="game1">
-          <div class="max-game__item">
-            <div class="max-game__text-box">
-              <p class="max-game__name">Угадай число</p>
-              <p class="max-game__opis">
+      <section class="mini-game center">
+        <h2 class="mini-game__zag">Мини-игры</h2>
+
+        <div class="mini-game__wrapper" id="game1">
+          <div class="mini-game__item">
+            <div class="mini-game__text-box">
+              <p class="mini-game__name">Угадай число</p>
+              <p class="mini-game__opis">
                 Попробуй угадать случайное число от 1 до 100.
               </p>
-              <button class="max-game__btn">Играть!</button>
+              <button class="mini-game__btn" onclick="randomNumberGame()">
+                Играть!
+              </button>
             </div>
-            <img src="./img/igra1.svg" alt="game1" class="max-game__img">
+            <img src="./img/game1.png" alt="" class="mini-game__img" />
           </div>
-          <div class="max-game__item" id="game2">
-            <img src="./img/igra2.svg" alt="game2" class="max-game__img">
-            <div class="max-game__text-box">
-              <p class="max-game__name">Простая арифметика</p>
-              <p class="max-game__opis">
+          <div class="mini-game__item" id="game2">
+            <img src="./img/game2.png" alt="" class="mini-game__img" />
+            <div class="mini-game__text-box">
+              <p class="mini-game__name">Простая арифметика</p>
+              <p class="mini-game__opis">
                 Попробуй решить простые арифметические задачи.
               </p>
-              <button class="max-game__btn">Играть!</button>
+              <button class="mini-game__btn" onclick="mathQuiz()">
+                Играть!
+              </button>
             </div>
           </div>
-          <div class="max-game__item" id="game3">
-            <div class="max-game__text-box">
-              <p class="max-game__name">Переверни текст</p>
-              <p class="max-game__opis">
+          <div class="mini-game__item" id="game3">
+            <div class="mini-game__text-box">
+              <p class="mini-game__name">Переверни текст</p>
+              <p class="mini-game__opis">
                 Попробуй ввести текст, который будет перевернут.
               </p>
-              <button class="max-game__btn">Играть!</button>
+              <button class="mini-game__btn" onclick="reverseText()">
+                Играть!
+              </button>
             </div>
-            <img src="./img/igra3.svg" alt="game3" class="max-game__img">
+            <img src="./img/game3.png" alt="" class="mini-game__img" />
           </div>
-          <div class="max-game__item" id="game4">
-            <img src="./img/igra4.png" alt="game4" class="max-game__img">
-            <div class="max-game__text-box">
-              <p class="max-game__name">Камень, ножницы, бумага</p>
-              <p class="max-game__opis">
+          <div class="mini-game__item" id="game4">
+            <img src="./img/game4.png" alt="" class="mini-game__img" />
+            <div class="mini-game__text-box">
+              <p class="mini-game__name">Камень, ножницы, бумага</p>
+              <p class="mini-game__opis">
                 Сыграй в популярную игру против компьютера.
               </p>
-              <button class="max-game__btn">Играть!</button>
+              <button class="mini-game__btn" onclick="playRockPaperScissors()">
+                Играть!
+              </button>
             </div>
           </div>
-          <div class="max-game__item" id="game5">
-            <div class="max-game__text-box">
-              <p class="max-game__name">Простая викторина</p>
-              <p class="max-game__opis">
+          <div class="mini-game__item" id="game5">
+            <div class="mini-game__text-box">
+              <p class="mini-game__name">Простая викторина</p>
+              <p class="mini-game__opis">
                 Отвечай на вопросы викторины с вариантами ответов.
               </p>
-              <button class="max-game__btn">Играть!</button>
+              <button class="mini-game__btn" onclick="game4Quiz()">
+                Играть!
+              </button>
             </div>
-            <img src="./img/igra5.svg" alt="game5" class="max-game__img">
+            <img src="./img/game5.png" alt="" class="mini-game__img" />
           </div>
-          <div class="max-game__item element" id="game6">
-            <img src="./img/igra6.svg" alt="game6" class="max-game__img">
-            <div class="max-game__text-box">
-              <p class="max-game__name">Генератор случайных цветов</p>
-              <p class="max-game__opis">
+          <div class="mini-game__item element" id="game6">
+            <img src="./img/game6.png" alt="" class="mini-game__img" />
+            <div class="mini-game__text-box">
+              <p class="mini-game__name">Генератор случайных цветов</p>
+              <p class="mini-game__opis">
                 Игра, в которой при клике на кнопку фон страницы меняется на
                 случайный.
               </p>
-              <button class="max-game__btn">Играть!</button>
+              <button class="mini-game__btn">Играть!</button>
             </div>
           </div>
         </div>
       </section>
-      <footer class="footer">Все права защищены.</footer>
     </main>
-    <script>
-      function scrollToSection(id) {
-        const target = document.getElementById(id);
-        if (target) {
-          target.scrollIntoView({ behavior: "smooth" });
-        }
-      }
-    </script>
+
+    <footer class="footer">Все права защищены.</footer>
+
+    <script src="hw-5.js"></script>
+    <script src="hw-6.js"></script>
+    <script src="hw-7.js"></script>
+    <script src="hw-8.js"></script>
   </body>
 </html>
