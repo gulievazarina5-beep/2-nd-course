@@ -24,7 +24,7 @@
             width: 400px;
         }
 
-        
+
 
         &__name {
             font-size: 24px;
@@ -54,8 +54,8 @@
     }
 
     .header {
-        height: 30vh;
-        
+
+
 
         &__zag {
             font-size: 52px;
@@ -77,6 +77,10 @@
             padding-top: 16px;
             padding-bottom: 16px;
             font-size: 24px;
+        }
+
+        &__footer {
+            padding-top: 310px;
         }
     }
 
@@ -113,11 +117,11 @@
             display: none;
         }
 
-        &__game-name{
+        &__game-name {
             font-size: 22px;
         }
 
-        &__text-box{
+        &__text-box {
             padding-left: 20px;
         }
     }
