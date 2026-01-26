@@ -291,3 +291,221 @@ button {
 button:hover {
   border: none;
 }
+
+@media (max-width: 1200px) {
+  .center {
+    padding-left: calc(50% - 400px);
+    padding-right: calc(50% - 400px);
+  }
+  .mini-game__zag {
+    font-size: 52px;
+    padding-top: 49px;
+  }
+  .mini-game__text-box {
+    padding-bottom: 32px;
+    padding-left: 32px;
+    width: 400px;
+  }
+  .mini-game__name {
+    font-size: 24px;
+  }
+  .mini-game__opis {
+    font-size: 16px;
+    width: 275px;
+    line-height: 24px;
+  }
+  .mini-game__img {
+    width: 400px;
+  }
+  .mini-game__wrapper::after {
+    content: none;
+    display: none;
+  }
+  .mini-game__wrapper::before {
+    content: none;
+    display: none;
+  }
+  .header__zag {
+    font-size: 52px;
+  }
+  .header__text {
+    font-size: 24px;
+  }
+  .header__bold {
+    font-size: 24px;
+  }
+  .header__main {
+    padding-top: 147px;
+  }
+  .header__but {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: 24px;
+  }
+  .header__footer {
+    padding-top: 310px;
+  }
+  .footer {
+    font-size: 24px;
+  }
+  .element::after {
+    content: none;
+    display: none;
+  }
+  .element::before {
+    content: none;
+    display: none;
+  }
+  .about__game::before {
+    content: none;
+    display: none;
+  }
+  .about__game::after {
+    content: none;
+    display: none;
+  }
+  .about__opis::before {
+    content: none;
+    display: none;
+  }
+  .about__game-name {
+    font-size: 22px;
+  }
+  .about__text-box {
+    padding-left: 20px;
+  }
+}
+@media (max-width: 800px) {
+  .center {
+    padding-left: calc(50% - 172px);
+    padding-right: calc(50% - 172px);
+  }
+  .about {
+    display: none;
+  }
+  .mini-game {
+    padding-bottom: 49px;
+  }
+  .mini-game__zag {
+    font-size: 40px;
+    padding-top: 49px;
+    margin-bottom: 48px;
+  }
+  .mini-game__item {
+    flex-direction: column;
+    padding-bottom: 32px;
+  }
+  .mini-game__text-box {
+    order: 1;
+    padding-top: 29px;
+    padding-bottom: 0;
+  }
+  .mini-game__img {
+    order: 0;
+    width: 100%;
+  }
+  .mini-game__name {
+    font-size: 32px;
+    margin-bottom: 16px;
+    width: 200px;
+  }
+  .mini-game__opis {
+    font-size: 16px;
+    margin-bottom: 32px;
+    line-height: 24px;
+    width: 275px;
+  }
+  .mini-game__btn {
+    width: 285px;
+    font-size: 16px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 142%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  .mini-game__wrapper::after {
+    content: none;
+    display: none;
+  }
+  .mini-game__wrapper::before {
+    content: none;
+    display: none;
+  }
+  .header {
+    background-image: url(./img/vector.svg);
+    height: 700px;
+    position: relative;
+  }
+  .header__zag {
+    font-size: 40px;
+    text-align: center;
+  }
+  .header__text {
+    font-size: 16px;
+    text-align: center;
+    position: relative;
+    line-height: 100%;
+  }
+  .header__bold {
+    font-size: 16px;
+  }
+  .header__main {
+    padding-top: 118px;
+    align-items: center;
+    position: relative;
+  }
+  .header__but {
+    font-size: 16px;
+    position: relative;
+    width: 285px;
+  }
+  .header__footer {
+    background-color: #BDED35;
+    width: 100%;
+    height: 52px;
+    margin-top: 158px;
+  }
+  .header__main::before {
+    content: url(./img/Star\ 5.svg);
+    position: relative;
+    top: 430px;
+    right: -80px;
+  }
+  .header__but::before {
+    content: url(./img/Star\ 4.svg);
+    position: absolute;
+    top: 90px;
+    right: -15px;
+  }
+  .header__but::after {
+    position: absolute;
+    content: url(./img/Star\ 3.svg);
+    top: -420px;
+    left: 10px;
+  }
+  .header__text::before {
+    content: url(./img/Star\ 2.svg);
+    top: -265px;
+    left: 10px;
+    position: absolute;
+  }
+  .header::after {
+    content: url(./img/big-star.svg);
+    top: 0;
+    right: 0;
+    position: absolute;
+  }
+  .footer {
+    font-size: 16px;
+    height: 100px;
+  }
+  .element::after {
+    content: none;
+    display: none;
+  }
+  .element::before {
+    content: none;
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */

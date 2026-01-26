@@ -112,4 +112,5 @@ console.log('Привет, Глеб!');
 
 //number5
 
-delayForSecond(() => sayHi('Глеб'));
+sayHi.bind(null, 'Глеб')
+
