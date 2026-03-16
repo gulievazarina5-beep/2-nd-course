@@ -1,63 +1,6 @@
 //встроенные обЪекты
 
-// game 3
 
-function reverseText() {
-    let textUser = prompt("Введите текст для игры: ")
-    let reversedText = textUser.split('').reverse().join('')
-    return alert(`Ваш текст: ${reversedText}`)
-
-}
-
-// game 4
-
-function game4Quiz() {
-
-    const quiz = [
-        {
-            question: "Какой цвет небо?",
-            options: ["1. Красный", "2. Синий", "3. Зеленый"],
-            correctAnswer: 2
-        },
-        {
-            question: "Сколько дней в неделе?",
-            options: ["1. Шесть", "2. Семь", "3. Восемь"],
-            correctAnswer: 2
-        },
-        {
-            question: "Сколько у человека пальцев на одной руке?",
-            options: ["1. Четыре", "2. Пять", "3. Шесть"],
-            correctAnswer: 2
-        }
-    ];
-
-    let correctAnswers = 0;
-
-    
-    for (let i = 0; i < quiz.length; i++) {
-        
-        let questionText = `Вопрос ${i + 1}:\n${quiz[i].question}\n`;
-        for (let j = 0; j < quiz[i].options.length; j++) {
-            questionText += quiz[i].options[j] + "\n";
-        }
-
-        
-        let userAnswer = prompt(questionText);
-        let answerNum = parseInt(userAnswer);
-
-        
-        if (answerNum === quiz[i].correctAnswer) {
-            correctAnswers++;
-            alert("✅ Правильно!");
-        } else {
-            alert(`❌ Неправильно! Правильный ответ: ${quiz[i].options[quiz[i].correctAnswer - 1]}`);
-        }
-    }
-
-    
-    alert(`🎉 Игра окончена!\nВы ответили правильно на ${correctAnswers} из ${quiz.length} вопросов!`);
-
-}
 
 
 

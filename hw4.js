@@ -1,39 +1,5 @@
 //функции
-function randomNumberGame() {
 
-    function getRandomInt(min, max) {
-        return Math.floor(Math.random() * (max - min + 1)) + min;
-    }
-
-    const randomNumber = getRandomInt(1, 100);
-
-    for (i = 6; i > 0; i--) {
-
-        let userNumbner = Number(prompt('Введите число от 1 до 100: '))
-
-        if (userNumbner == '') {
-            break
-        }
-
-        if (randomNumber > userNumbner) {
-            alert(`Число меньше загаданного осталось попыток ${i}`)
-        }
-
-        if (randomNumber < userNumbner) {
-            alert(`Число большего загаданного осталось попыток ${i}`)
-        }
-
-        if (randomNumber == userNumbner) {
-            alert('Вы молодец, угадали загаданное число')
-            break
-        }
-
-        if (randomNumber != userNumbner && i == 1) {
-            alert('Попробуй снова!')
-        }
-
-    }
-}
 
 
 //number1

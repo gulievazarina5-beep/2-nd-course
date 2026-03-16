@@ -1,48 +1,4 @@
 //Callback, setTimeout, setInterval
-
-function playRockPaperScissors() {
-    
-    const options = ["камень", "ножницы", "бумага"];
-    
-    
-    let userChoice = prompt(
-        "Выберите: камень, ножницы или бумага?\n(Введите точно: 'камень', 'ножницы' или 'бумага')"
-    );
-    
-    // Проверка ввода
-    if (!options.includes(userChoice.toLowerCase())) {
-        alert("❌ Неверный выбор! Играйте заново.");
-        return;
-    }
-    
-    userChoice = userChoice.toLowerCase();
-    
-    
-    const computerIndex = Math.floor(Math.random() * 3);
-    const computerChoice = options[computerIndex];
-    
-    
-    let result = "";
-    if (userChoice === computerChoice) {
-        result = "🤝 Ничья!";
-    } else if (
-        (userChoice === "камень" && computerChoice === "ножницы") ||
-        (userChoice === "ножницы" && computerChoice === "бумага") ||
-        (userChoice === "бумага" && computerChoice === "камень")
-    ) {
-        result = "🎉 Вы победили!";
-    } else {
-        result = "😢 Компьютер победил!";
-    }
-    
-    
-    alert(
-        `Ваш выбор: ${userChoice}\n` +
-        `Компьютер: ${computerChoice}\n\n` +
-        `${result}`
-    );
-}
-
 //number1
 
 const people = [
