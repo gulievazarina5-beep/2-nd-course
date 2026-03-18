@@ -359,7 +359,7 @@ button:hover {
     }
 
     .mini-game {
-        padding-bottom: 49px;
+        
 
         &__zag {
             font-size: 40px;
@@ -461,6 +461,10 @@ button:hover {
             margin-top: 158px;
         }
 
+        .marquee-wrapper {
+            font-weight: 600;
+            font-size: 16px;
+        }
 
         &__main::before {
             content: url(./img/Star\ 5.svg);

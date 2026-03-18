@@ -30,24 +30,13 @@
         </button>
       </div>
       <div class="header__footer">
-        <div class="marquee">
-  <div class="marquee__inner">
-    <span>ЧИСЛО</span>
-    <span class="separator">✦</span>
-    <span>ПЕРЕВЕРНИ ТЕКСТ</span>
-    <span class="separator">✦</span>
-    <span>ПРОСТАЯ АРИФМЕТИКА</span>
-    <span class="separator">✦</span>
-    <span>КАМЕНЬ, НОЖНИЦЫ, БУМАГА</span>
-    <span class="separator">✦</span>
-    <span>ЧИСЛО</span>
-    <span class="separator">✦</span>
-    <span>ПЕРЕВЕРНИ ТЕКСТ</span>
-    <span class="separator">✦</span>
-    <span>ПРОСТАЯ АРИФМЕТИКА</span>
-    <span class="separator">✦</span>
-    <span>КАМЕНЬ, НОЖНИЦЫ, БУМАГА</span>
-    <span class="separator">✦</span>
+        <div class="marquee-wrapper">
+  <div class="marquee-content" id="marquee">
+    <span>ВИКТОРИНА</span><span class="sep">✦</span>
+    <span>УГАДАЙ ЧИСЛО</span><span class="sep">✦</span>
+    <span>ПЕРЕВЕРНИ ТЕКСТ</span><span class="sep">✦</span>
+    <span>ПРОСТАЯ АРИФМЕТИКА</span><span class="sep">✦</span>
+    <span>КАМЕНЬ, НОЖНИЦЫ, БУМАГА</span><span class="sep">✦</span>
   </div>
 </div>
 
@@ -133,7 +122,7 @@
           </div>
         </div>
       </section>
-      <section class="mini-game center">
+      <section class="mini-game center"id="mini-game">
         <h2 class="mini-game__zag">Мини-игры</h2>
 
         <div class="mini-game__wrapper" id="game1">
@@ -156,7 +145,7 @@
               <p class="mini-game__opis">
                 Попробуй решить простые арифметические задачи.
               </p>
-              <button class="mini-game__btn" onclick="mathQuiz()">
+              <button class="mini-game__btn" onclick="startMathGame()">
                 Играть!
               </button>
             </div>
@@ -191,7 +180,7 @@
               <p class="mini-game__opis">
                 Отвечай на вопросы викторины с вариантами ответов.
               </p>
-              <button class="mini-game__btn" onclick="game4Quiz()">
+              <button class="mini-game__btn" onclick="startQuiz()">
                 Играть!
               </button>
             </div>
@@ -205,7 +194,9 @@
                 Игра, в которой при клике на кнопку фон страницы меняется на
                 случайный.
               </p>
-              <button class="mini-game__btn">Играть!</button>
+              <button class="mini-game__btn" onclick="startColorGame();">
+                Играть!
+              </button>
             </div>
           </div>
         </div>

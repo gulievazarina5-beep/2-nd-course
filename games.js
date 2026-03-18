@@ -1,3 +1,16 @@
+const marquee = document.getElementById('marquee');
+
+marquee.innerHTML += marquee.innerHTML;
+
+marquee.parentElement.addEventListener('mouseenter', () => {
+    marquee.style.animationPlayState = 'paused';
+});
+marquee.parentElement.addEventListener('mouseleave', () => {
+    marquee.style.animationPlayState = 'running';
+});
+
+
+
 function randomNumberGame() {
 
     function getRandomInt(min, max) {
@@ -65,8 +78,6 @@ function mathQuiz() {
             operationSign = '÷';
             break;
     }
-
-
     const userAnswer = prompt(`${num1} ${operationSign} ${num2} = ?`);
 
 
@@ -90,6 +101,45 @@ for (let i = 0; i < arr1.length; i++) {
     if (arr1[i] === 10) break;
 }
 
+function startMathGame() {
+    
+    const operators = ['+', '-', '*', '/'];
+    
+    const randomOperator = operators[Math.floor(Math.random() * operators.length)];
+
+    
+    let num1 = Math.floor(Math.random() * 10) + 1;
+    let num2 = Math.floor(Math.random() * 10) + 1;
+
+    
+    if (randomOperator === '/') {
+        num1 = num1 * num2; 
+    }
+
+    
+    const task = `${num1} ${randomOperator} ${num2}`;
+    
+    
+    let correctAnswer;
+    if (randomOperator === '+') correctAnswer = num1 + num2;
+    else if (randomOperator === '-') correctAnswer = num1 - num2;
+    else if (randomOperator === '*') correctAnswer = num1 * num2;
+    else if (randomOperator === '/') correctAnswer = num1 / num2;
+
+    
+    const userAnswer = prompt(`Решите задачу: ${task}`);
+
+
+    if (userAnswer === null) {
+        alert("Игра отменена");
+    } else if (parseInt(userAnswer) === correctAnswer) {
+        alert(`Верно! ${task} = ${correctAnswer}`);
+    } else {
+        alert(`Ошибка. Правильный ответ: ${correctAnswer}`);
+    }
+}
+
+
 
 // game 3
 
@@ -101,54 +151,59 @@ function reverseText() {
 }
 
 // game 4
+const quiz = [
+    {
+        question: "Какой цвет небо?",
+        options: ["1. Красный", "2. Синий", "3. Зеленый"],
+        correctAnswer: 2
+    },
+    {
+        question: "Сколько дней в неделе?",
+        options: ["1. Шесть", "2. Семь", "3. Восемь"],
+        correctAnswer: 2
+    },
+    {
+        question: "Сколько у человека пальцев на одной руке?",
+        options: ["1. Четыре", "2. Пять", "3. Шесть"],
+        correctAnswer: 2
+    }
+];
 
-function game4Quiz() {
+function startQuiz() {
+    let score = 0; 
+    let answeredQuestions = 0; 
 
-    const quiz = [
-        {
-            question: "Какой цвет небо?",
-            options: ["1. Красный", "2. Синий", "3. Зеленый"],
-            correctAnswer: 2
-        },
-        {
-            question: "Сколько дней в неделе?",
-            options: ["1. Шесть", "2. Семь", "3. Восемь"],
-            correctAnswer: 2
-        },
-        {
-            question: "Сколько у человека пальцев на одной руке?",
-            options: ["1. Четыре", "2. Пять", "3. Шесть"],
-            correctAnswer: 2
-        }
-    ];
-
-    let correctAnswers = 0;
-
-    
     for (let i = 0; i < quiz.length; i++) {
+        const fullQuestion = `Вопрос ${i + 1} из ${quiz.length}:\n\n${quiz[i].question}\n\nВарианты:\n${quiz[i].options.join('\n')}`;
         
-        let questionText = `Вопрос ${i + 1}:\n${quiz[i].question}\n`;
-        for (let j = 0; j < quiz[i].options.length; j++) {
-            questionText += quiz[i].options[j] + "\n";
+        const userAnswer = prompt(fullQuestion);
+
+        
+        if (userAnswer === null) {
+            alert("Вы вышли из игры.");
+            break; 
         }
 
-        
-        let userAnswer = prompt(questionText);
-        let answerNum = parseInt(userAnswer);
+        answeredQuestions++;
 
         
-        if (answerNum === quiz[i].correctAnswer) {
-            correctAnswers++;
-            alert("✅ Правильно!");
+        if (parseInt(userAnswer) === quiz[i].correctAnswer) {
+            score++;
+            alert("✅ Верно!");
         } else {
-            alert(`❌ Неправильно! Правильный ответ: ${quiz[i].options[quiz[i].correctAnswer - 1]}`);
+            alert(`❌ Ошибка. Правильный ответ был под номером ${quiz[i].correctAnswer}.`);
         }
     }
 
     
-    alert(`🎉 Игра окончена!\nВы ответили правильно на ${correctAnswers} из ${quiz.length} вопросов!`);
-
+    if (answeredQuestions > 0) {
+        alert(`Викторина завершена!\n\nРезультат: ${score} из ${answeredQuestions} (всего в игре было ${quiz.length} вопросов).`);
+    }
 }
+
+
+startQuiz();
+
 
 function playRockPaperScissors() {
     
@@ -192,3 +247,35 @@ function playRockPaperScissors() {
         `${result}`
     );
 }
+
+
+const display = document.getElementById('color-display');
+const text = document.getElementById('hex-code');
+const button = document.getElementById('btn');
+
+const gameblok = document.getElementById('mini-game');
+function startColorGame() {
+    
+    const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16).padStart(6, '0');
+
+    
+    const userChoice = prompt(
+        `Сгенерирован цвет: ${randomColor.toUpperCase()}\n\nХотите применить его как фон страницы?\nВведите "да" или "нет"`
+    );
+
+    
+    if (userChoice === null) {
+        alert("Генерация отменена.");
+    } else if (userChoice.toLowerCase() === 'да') {
+
+        gameblok.style.backgroundColor = randomColor;
+        alert(`Цвет ${randomColor.toUpperCase()} успешно установлен!`);
+    } else if (userChoice.toLowerCase() === 'нет') {
+        alert("Хорошо, оставим текущий цвет.");
+    } else {
+        alert("Не совсем понял ответ, но цвет был: " + randomColor.toUpperCase());
+    }
+}
+
+
+startColorGame();

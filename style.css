@@ -19,10 +19,13 @@ button {
 
 .header {
   background-image: url(./img/kryt.png);
-  height: 800px;
+  height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .header__main {
@@ -31,7 +34,6 @@ button {
   gap: 24px;
   flex-direction: column;
 }
-
 .header__but {
   width: 247px;
   padding: 16px 28px;
@@ -44,7 +46,6 @@ button {
   letter-spacing: 0%;
   text-align: center;
 }
-
 .header__zag {
   font-weight: 700;
   font-size: 64px;
@@ -52,7 +53,6 @@ button {
   letter-spacing: 0px;
   color: #202027;
 }
-
 .header__text {
   font-weight: 400;
   font-size: 24px;
@@ -62,7 +62,6 @@ button {
   max-width: 720px;
   color: #202027;
 }
-
 .header__bold {
   font-weight: 600;
   font-size: 24px;
@@ -70,50 +69,48 @@ button {
   letter-spacing: 0px;
   color: #202027;
 }
-
 .header__but:hover {
   background-color: white;
   color: black;
   transition: all 1.5s;
 }
 
-.marquee {
+.marquee-wrapper {
   width: 100%;
-  background-color: #d4ff3f; 
-  overflow: hidden; 
-  padding: 20px 0;
-  border-top: 2px solid #000;
-  border-bottom: 2px solid #000;
-  display: flex;
+  background-color: #BCEE30; 
+  overflow: hidden;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  padding: 25px 0; 
 }
 
-.marquee__inner {
+.marquee-content {
   display: flex;
   white-space: nowrap;
-  animation: scroll 20s linear infinite; 
+  will-change: transform;
+  animation: scroll-left 25s linear infinite;
 }
 
-.marquee__inner span {
+.marquee-content span {
   font-family: 'Montserrat';
-  font-weight: 900;
-  font-size: 24px;
+  font-size: 24px; 
+  font-weight: 700; 
+  color: #000;
+  padding: 0 40px; 
   text-transform: uppercase;
-  padding: 0 20px;
 }
 
-.separator {
-  font-size: 30px;
+.marquee-content .sep {
+  padding: 0;
+  font-weight: 400; 
 }
 
 
-@keyframes scroll {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%); 
-  }
+@keyframes scroll-left {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
 }
+
 
 
 .about {
@@ -507,7 +504,6 @@ button:hover {
   .header__footer {
     width: 100%;
     height: 52px;
-    margin-top: 158px;
   }
   .header__main::before {
     content: url(./img/Star\ 5.svg);
